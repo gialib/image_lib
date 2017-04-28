@@ -23,8 +23,8 @@ defmodule ImageLib.Identify do
       |> String.split("x")
       |> Enum.map(fn(value) -> String.to_integer(value) end)
 
-    mime_type = data |> Map.get("Image", %{}) |> Map.get("Mime Type")
-    format = data |> Map.get("Image", %{}) |> Map.get("format")
+    mime_type = data |> Map.get("Image", %{}) |> Map.get("Mime type")
+    format = data |> Map.get("Image", %{}) |> Map.get("Format")
 
     %Image{
       size:        size,
