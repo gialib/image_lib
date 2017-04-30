@@ -64,6 +64,23 @@ defmodule ImageLib.MagickTest do
     )
   end
 
+  test ".convert animated with dist_format is jpg" do
+    File.mkdir_p!(@temp_test_directory)
+
+    Magick.convert(
+      src: @fixture_animated,
+      dist_format: "jpg",
+      dist: get_dist_path("bender_anim_from_gif.jpg"),
+      strip: true,
+      flatten: true,
+      quality: 80,
+      resize: "580x580",
+      background: "orange",
+      gravity: "center",
+      extent: "1024x768",  # 注意顺序
+    )
+  end
+
   test ".convert with watermark" do
     File.mkdir_p!(@temp_test_directory)
 

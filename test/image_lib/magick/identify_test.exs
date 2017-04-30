@@ -8,6 +8,8 @@ defmodule ImageLib.IdentifyTest do
   @fixture Path.join(__DIR__, "../../fixtures/magick/bender.jpg") |> Path.expand
 
   test ".identify" do
+    Identify.verbose("/Users/happy/tmp/upload_test.jpg")
+
     assert Identify.identify(@fixture) ==
       %Image{
         animated: false,

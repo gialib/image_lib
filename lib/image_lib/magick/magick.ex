@@ -11,6 +11,8 @@ defmodule ImageLib.Magick do
     :blur,          # 模糊
     :"motion-blur", # 运动模糊
     :strip,         # 去掉extif
+    :flatten,       # gif图片转jpg有用
+    :mosiac,
     :"auto-orient", # 自动方向
     :geometry,
     :composite,     # true/false
@@ -129,9 +131,16 @@ defmodule ImageLib.Magick do
 
     normalized_args_origin = normalized_args_origin ++ Keyword.get(opts, :origins, [])
 
+    dist =
+      if dist_format = Keyword.get(opts, :dist_format, nil) do
+        "#{dist_format}:#{Keyword.get(opts, :dist, nil)}"
+      else
+        "#{Keyword.get(opts, :dist, nil)}"
+      end
+
     args =
       (args ++ normalized_args ++ normalized_args_add ++ normalized_args_origin)
-      |> List.insert_at(-1, Keyword.get(opts, :dist, ""))
+      |> List.insert_at(-1, dist)
       |> List.flatten
 
     system_cmd("convert", args, stderr_to_stdout: true)

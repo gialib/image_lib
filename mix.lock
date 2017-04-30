@@ -7,8 +7,9 @@
   "idna": {:hex, :idna, "4.0.0", "10aaa9f79d0b12cf0def53038547855b91144f1bfcc0ec73494f38bb7b9c4961", [:rebar3], []},
   "metrics": {:hex, :metrics, "1.0.1", "25f094dea2cda98213cecc3aeff09e940299d950904393b2a29d191c346a8486", [:rebar3], []},
   "mimerl": {:hex, :mimerl, "1.0.2", "993f9b0e084083405ed8252b99460c4f0563e41729ab42d9074fd5e52439be88", [:rebar3], []},
-  "relax_yaml": {:hex, :relax_yaml, "0.1.2", "942569e43b8a7b8e65a6f1f73a541152c257963d705ec028051a77ea8a5312ee", [:mix], [{:yamerl, "~> 0.3.2", [hex: :yamerl, optional: false]}]},
+  "relax_yaml": {:hex, :relax_yaml, "0.1.4", "99e55ae80b3bd1135f4288e1ba77b816ad7de05bcb4618a1a9f983ce7c89ff32", [:mix], [{:yamerl, "~> 0.4.0", [hex: :yamerl, optional: false]}]},
   "ssl_verify_fun": {:hex, :ssl_verify_fun, "1.1.1", "28a4d65b7f59893bc2c7de786dec1e1555bd742d336043fe644ae956c3497fbe", [:make, :rebar], []},
   "timex": {:hex, :timex, "3.1.13", "48b33162e3ec33e9a08fb5f98e3f3c19c3e328dded3156096c1969b77d33eef0", [:mix], [{:combine, "~> 0.7", [hex: :combine, optional: false]}, {:gettext, "~> 0.10", [hex: :gettext, optional: false]}, {:tzdata, "~> 0.1.8 or ~> 0.5", [hex: :tzdata, optional: false]}]},
   "tzdata": {:hex, :tzdata, "0.5.12", "1c17b68692c6ba5b6ab15db3d64cc8baa0f182043d5ae9d4b6d35d70af76f67b", [:mix], [{:hackney, "~> 1.0", [hex: :hackney, optional: false]}]},
-  "yamerl": {:hex, :yamerl, "0.3.3", "df48fe3e6aeaca05ec6c4b35418aa7c77258d0d1c32d578a2e12a14751c10d42", [:rebar3], []}}
+  "yamerl": {:hex, :yamerl, "0.4.0", "ae215b1242810a9bc07716b88062f1bfe06f6bc7cf68372091f630baa536df79", [:rebar3], []},
+  "yomel": {:hex, :yomel, "0.3.0", "1de440788727829458faee36aabbcc26e2cc2d01633cc4c7e24afaf64eabb85a", [:make, :mix], []}}

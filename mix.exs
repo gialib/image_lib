@@ -25,7 +25,8 @@ defmodule ImageLib.Mixfile do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:timex, "~> 3.0"},
-      {:relax_yaml, "~> 0.1.2"}
+      {:relax_yaml, "~> 0.1.4"}
+      ## {:relax_yaml, path: "/Users/happy/Jinzhong/Blog/self/relax_yaml"}
     ]
   end
 
